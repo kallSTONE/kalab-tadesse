@@ -3,7 +3,7 @@ import { social } from '../../data/portfolio';
 
 export default function SocialBar() {
   return (
-    <div className="fixed left-6 bottom-0 z-40 hidden lg:flex flex-col items-center gap-6">
+    <div className="fixed right-6 md:left-6 md:right-auto bottom-0 z-40 flex flex-col items-center gap-6">
       <a
         href={social.github}
         target="_blank"

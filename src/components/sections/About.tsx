@@ -6,23 +6,23 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionTitle title="About Me" />
 
-        <div className="max-w-3xl space-y-6 text-lg text-text-secondary leading-relaxed">
+        <div className="max-w-3xl space-y-5 text-lg text-text-secondary leading-relaxed">
           <p>
-            I'm a full-stack developer with over 5 years of experience building scalable web applications.
-            My journey in software development began with a curiosity for how things work,
-            which evolved into a passion for creating efficient, user-centered solutions.
+            I’m a full-stack developer with 2 years of experience building scalable,
+            user-focused web applications. I enjoy turning complex problems into
+            clean, practical solutions with a strong emphasis on performance and usability.
           </p>
 
           <p>
-            I specialize in modern JavaScript frameworks and have a strong foundation in both frontend
-            and backend technologies. My approach combines technical excellence with a deep understanding
-            of user needs, ensuring that every project I work on is both functional and delightful to use.
+            I work primarily with modern JavaScript frameworks across both frontend and backend,
+            and I value writing maintainable code that can grow with a product over time.
           </p>
 
           <p>
-            When I'm not coding, I enjoy contributing to open-source projects, writing technical articles,
-            and staying up-to-date with the latest developments in web technologies.
-            I believe in continuous learning and sharing knowledge with the developer community.
+            AI plays an important role in my development workflow—from accelerating research
+            and debugging to improving code quality and productivity. That said, I treat AI
+            as a tool, not a source of truth: every output is reviewed, refined, and validated
+            to ensure it meets real-world requirements.
           </p>
         </div>
       </div>
