@@ -12,7 +12,7 @@ export default function Header() {
             href="#home"
             className="text-xl font-semibold tracking-tight hover:text-primary transition-colors"
           >
-            Portfolio
+            Kalab.T
           </a>
 
           <nav className="hidden md:flex items-center gap-8">

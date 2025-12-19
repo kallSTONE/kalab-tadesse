@@ -1,3 +1,50 @@
+// data/portfolio.js
+import {
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaHtml5,
+  FaCss3Alt,
+} from 'react-icons/fa';
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiMongodb,
+  SiPostgresql,
+} from 'react-icons/si';
+
+export const skills = [
+  {
+    category: 'Frontend',
+    items: [
+      { name: 'React', icon: FaReact },
+      { name: 'Next.js', icon: SiNextdotjs },
+      { name: 'JavaScript', icon: SiJavascript },
+      { name: 'TypeScript', icon: SiTypescript },
+      { name: 'Tailwind CSS', icon: SiTailwindcss },
+      { name: 'HTML5', icon: FaHtml5 },
+      { name: 'CSS3', icon: FaCss3Alt },
+    ],
+  },
+  {
+    category: 'Backend',
+    items: [
+      { name: 'Node.js', icon: FaNodeJs },
+      { name: 'MongoDB', icon: SiMongodb },
+      { name: 'PostgreSQL', icon: SiPostgresql },
+    ],
+  },
+  {
+    category: 'Tools',
+    items: [
+      { name: 'Git', icon: FaGitAlt },
+    ],
+  },
+];
+
+
 export interface Project {
   id: string;
   title: string;
@@ -86,20 +133,20 @@ export const experience: Experience[] = [
   }
 ];
 
-export const skills: Skill[] = [
-  {
-    category: 'Frontend',
-    items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js']
-  },
-  {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'GraphQL']
-  },
-  {
-    category: 'Tools & Other',
-    items: ['Git', 'Docker', 'AWS', 'Jest', 'Figma']
-  }
-];
+// export const skills: Skill[] = [
+//   {
+//     category: 'Frontend',
+//     items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js']
+//   },
+//   {
+//     category: 'Backend',
+//     items: ['Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'GraphQL']
+//   },
+//   {
+//     category: 'Tools & Other',
+//     items: ['Git', 'Docker', 'AWS', 'Jest', 'Figma']
+//   }
+// ];
 
 export const social = {
   github: 'https://github.com',

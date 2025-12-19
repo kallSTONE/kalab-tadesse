@@ -7,10 +7,10 @@ export default function Hero() {
       <div className="absolute inset-0 gradient-radial pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 relative z-10">
-        <div className="max-w-3xl  md:flex flex-row gap-8 items-center">
+        <div className="max-w-4xl  md:flex flex-row gap-8 items-center">
           <div className="space-y-6">
             <div className="space-y-2">
-              <p className="text-sm font-medium text-primary uppercase tracking-wider">
+              <p className="text-lg font-medium text-primary uppercase tracking-wider">
                 Full Stack Developer
               </p>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
@@ -18,7 +18,7 @@ export default function Hero() {
               </h1>
             </div>
 
-            <p className="text-xl md:text-2xl text-text-secondary leading-relaxed max-w-2xl">
+            <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl">
               I craft elegant digital experiences that solve real problems.
               Specializing in modern web applications with a focus on performance and user experience.
             </p>
