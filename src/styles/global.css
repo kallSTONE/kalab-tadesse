@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 15, 76, 92;
+  --color-bg-primary: 250, 250, 250;
+  --color-bg-secondary: 255, 255, 255;
+  --color-bg-tertiary: 245, 245, 245;
+  --color-text-primary: 20, 20, 20;
+  --color-text-secondary: 80, 80, 80;
+  --color-text-tertiary: 120, 120, 120;
+  --color-border: 220, 220, 220;
+  --color-accent: 15, 76, 92;
+}
+
+.dark {
+  --color-primary: 15, 76, 92;
+  --color-bg-primary: 10, 10, 10;
+  --color-bg-secondary: 18, 18, 18;
+  --color-bg-tertiary: 25, 25, 25;
+  --color-text-primary: 245, 245, 245;
+  --color-text-secondary: 190, 190, 190;
+  --color-text-tertiary: 140, 140, 140;
+  --color-border: 45, 45, 45;
+  --color-accent: 15, 76, 92;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-bg-primary text-text-primary antialiased;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-bg-primary {
+    background-color: rgb(var(--color-bg-primary));
+  }
+
+  .bg-bg-secondary {
+    background-color: rgb(var(--color-bg-secondary));
+  }
+
+  .bg-bg-tertiary {
+    background-color: rgb(var(--color-bg-tertiary));
+  }
+
+  .text-text-primary {
+    color: rgb(var(--color-text-primary));
+  }
+
+  .text-text-secondary {
+    color: rgb(var(--color-text-secondary));
+  }
+
+  .text-text-tertiary {
+    color: rgb(var(--color-text-tertiary));
+  }
+
+  .text-primary {
+    color: rgb(var(--color-primary));
+  }
+
+  .bg-primary {
+    background-color: rgb(var(--color-primary));
+  }
+
+  .border-border {
+    border-color: rgb(var(--color-border));
+  }
+
+  .bg-primary-10 {
+    background-color: rgba(var(--color-primary), 0.1);
+  }
+
+  .bg-primary-20 {
+    background-color: rgba(var(--color-primary), 0.2);
+  }
+
+  .bg-primary-30 {
+    background-color: rgba(var(--color-primary), 0.3);
+  }
+
+  .border-primary-20 {
+    border-color: rgba(var(--color-primary), 0.2);
+  }
+
+  .border-primary-30 {
+    border-color: rgba(var(--color-primary), 0.3);
+  }
+
+  .glass {
+    background: rgba(var(--color-bg-secondary), 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .gradient-primary {
+    background: linear-gradient(
+      135deg,
+      rgba(var(--color-primary), 0.1) 0%,
+      rgba(var(--color-primary), 0.05) 50%,
+      transparent 100%
+    );
+  }
+
+  .gradient-radial {
+    background: radial-gradient(
+      circle at top left,
+      rgba(var(--color-primary), 0.15),
+      transparent 50%
+    );
+  }
+}
