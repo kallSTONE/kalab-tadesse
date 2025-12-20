@@ -1,10 +1,10 @@
-import { Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Github, Linkedin, Send } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 import { social } from '../../data/portfolio';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 border-t border-border">
+    <section id="contact" className="py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <SectionTitle
           title="Get In Touch"
@@ -56,15 +56,15 @@ export default function Contact() {
             </a>
 
             <a
-              href={social.twitter}
+              href={social.telegram}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary-30 bg-bg-secondary hover:bg-primary-10 transition-all group"
             >
-              <Twitter className="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors" />
+              <Send className="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors" />
               <div>
-                <p className="text-sm text-text-tertiary">Twitter</p>
-                <p className="text-text-primary font-medium">Follow</p>
+                <p className="text-sm text-text-tertiary">Telegram</p>
+                <p className="text-text-primary font-medium">Message</p>
               </div>
             </a>
           </div>

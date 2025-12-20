@@ -39,7 +39,7 @@ export default function Header() {
 
       {/* Mobile SocialBar overlay */}
       {showSocialBar && (
-        <div className="fixed inset-0 top-16 z-40 md:hidden bg-black/50 backdrop-blur-sm flex justify-start">
+        <div className="fixed inset-0 top-16 z-40 md:hidden bg-primary/80 backdrop-blur-sm flex justify-start">
           <SocialBar />
           {/* Clicking outside can close the sidebar */}
           <div

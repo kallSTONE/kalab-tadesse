@@ -35,7 +35,7 @@ export default function IconSidebar() {
   ];
 
   return (
-    <aside className="fixed left-6 bottom-0 top-0 z-40 flex-col items-center justify-between py-8 h-full">
+    <aside className="fixed left-[40%] md:left-4 bottom-0 top-0 z-40 flex-col items-center justify-between py-8 h-full ">
       {/* Top Nav Icons */}
       <div className="flex flex-col items-center gap-6 relative mb-12">
         {navItems.map((item) => (
@@ -47,7 +47,7 @@ export default function IconSidebar() {
           >
             <a
               href={item.href}
-              className="text-text-secondary hover:text-text-primary transition-colors"
+              className="text-text-secondary hover:text-text-primary transition-colors md:opacity-60 "
               aria-label={item.label}
             >
               {item.icon}
@@ -74,7 +74,7 @@ export default function IconSidebar() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-tertiary hover:text-primary transition-colors"
+              className="text-text-secondary md:opacity-60 hover:text-primary transition-colors"
               aria-label={item.label}
             >
               {item.icon}

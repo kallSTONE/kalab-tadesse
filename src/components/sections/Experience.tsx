@@ -12,7 +12,7 @@ export default function Experience() {
 
         <div className="space-y-12 max-w-3xl">
           {experience.map((exp, index) => (
-            <div key={index} className="relative pl-8 border-l-2 border-border">
+            <div key={index} className="relative pl-8">
               <div className="absolute left-0 top-0 w-2 h-2 -ml-[5px] rounded-full bg-primary"></div>
 
               <div className="space-y-3">

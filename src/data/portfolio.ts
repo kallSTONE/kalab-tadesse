@@ -7,6 +7,7 @@ import {
   FaCss3Alt,
   FaPhp,
   FaRobot,
+  FaGithub,
 } from 'react-icons/fa';
 
 import {
@@ -39,7 +40,7 @@ export const skills = [
       { name: 'MySQL', icon: SiMysql },
       { name: 'PHP', icon: FaPhp },
       { name: 'Node.js', icon: FaNodeJs },
-      { name: 'PostgreSQL', icon: SiPostgresql },
+      // { name: 'PostgreSQL', icon: SiPostgresql },
     ],
   },
   {
@@ -47,7 +48,7 @@ export const skills = [
     items: [
       { name: 'AI', icon: FaRobot },
       { name: 'Supabase', icon: SiSupabase },
-      { name: 'GitHub', icon: FaGitAlt },
+      { name: 'GitHub', icon: FaGithub },
       { name: 'Git', icon: FaGitAlt },
     ],
   },
