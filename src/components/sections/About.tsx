@@ -1,30 +1,56 @@
+import { motion } from 'framer-motion';
 import SectionTitle from '../ui/SectionTitle';
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 1, // ⬅️ 1 second gap between paragraphs
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut' as const,
+    },
+  },
+};
+
 
 export default function About() {
   return (
     <section id="about" className="py-24 border-t border-border">
-      <div className="max-w-[70%] mx-auto px-6 lg:px-8">
+      <div className="max-w-2xl mx-auto px-6">
         <SectionTitle title="About Me" />
 
-        <div className="max-w-3xl space-y-5 text-lg text-text-secondary leading-relaxed">
-          <p>
-            I’m a full-stack developer with 2 years of experience building scalable,
-            user-focused web applications. I enjoy turning complex problems into
-            clean, practical solutions with a strong emphasis on performance and usability.
-          </p>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="space-y-4 text-base text-text-secondary leading-relaxed"
+        >
+          <motion.p variants={itemVariants}>
+            Full-stack developer with 2 years of experience building scalable,
+            user-focused web applications.
+          </motion.p>
 
-          <p>
-            I work primarily with modern JavaScript frameworks across both frontend and backend,
-            and I value writing maintainable code that can grow with a product over time.
-          </p>
+          <motion.p variants={itemVariants} className="opacity-90">
+            I focus on clean solutions, performance, and maintainable
+            JavaScript across frontend and backend.
+          </motion.p>
 
-          <p>
-            AI plays an important role in my development workflow—from accelerating research
-            and debugging to improving code quality and productivity. That said, I treat AI
-            as a tool, not a source of truth: every output is reviewed, refined, and validated
-            to ensure it meets real-world requirements.
-          </p>
-        </div>
+          <motion.p variants={itemVariants} className="opacity-70">
+            AI assists my workflow, but every output is reviewed and validated.
+          </motion.p>
+        </motion.div>
       </div>
     </section>
   );
