@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
 
           <div className="hidden md:block w-48 h-48 md:w-64 md:h-64 flex-shrink-0 overflow-hidden rounded-full">
-            <img src="/echoboy.png" className='opacity-90' draggable={false} alt="echoboy" />
+            <img src="/echoboy.png" className='opacity-80' draggable={false} alt="echoboy" />
           </div>
 
         </div>

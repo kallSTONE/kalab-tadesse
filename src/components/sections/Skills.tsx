@@ -53,7 +53,7 @@ export default function Skills() {
                 {group.category}
               </h3>
 
-              <ul className="grid grid-cols-2 gap-4">
+              <ul className="grid grid-cols-3 items-center md:grid-cols-2 gap-4">
                 {group.items.map(({ name, icon: Icon }) => (
                   <li
                     key={name}
@@ -63,7 +63,7 @@ export default function Skills() {
                                transition-all"
                   >
                     <Icon className="text-xl group-hover:text-primary transition-colors" />
-                    <span className="text-sm font-medium">{name}</span>
+                    <span className="text-sm font-medium hidden md:block">{name}</span>
                   </li>
                 ))}
               </ul>
