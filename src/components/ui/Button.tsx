@@ -6,16 +6,20 @@ interface ButtonProps {
   href?: string;
   onClick?: () => void;
   className?: string;
+  download?: boolean | string; // 👈 add this
 }
+
 
 export default function Button({
   children,
   variant = 'primary',
   href,
   onClick,
-  className = ''
+  className = '',
+  download
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all';
+  const baseStyles =
+    'inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all';
 
   const variants = {
     primary: 'bg-primary text-white hover:opacity-90',
@@ -30,6 +34,7 @@ export default function Button({
       <a
         href={href}
         className={classes}
+        download={download} // 👈 key line
         target={href.startsWith('http') ? '_blank' : undefined}
         rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
       >
@@ -44,3 +49,4 @@ export default function Button({
     </button>
   );
 }
+

@@ -28,7 +28,7 @@ export default function Hero() {
                 View Projects
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button variant="secondary" href="/cv.pdf">
+              <Button variant="secondary" href="/cv.pdf" download>
                 <Download className="w-4 h-4 mr-2" />
                 Download CV
               </Button>

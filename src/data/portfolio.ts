@@ -37,6 +37,7 @@ export const skills = [
     category: 'Backend',
     items: [
       { name: 'MySQL', icon: SiMysql },
+      { name: 'PHP', icon: FaPhp },
       { name: 'Node.js', icon: FaNodeJs },
       { name: 'PostgreSQL', icon: SiPostgresql },
     ],
@@ -90,28 +91,28 @@ export const projects: Project[] = [
     description: 'Modern AI tool sharing application with article and toolkit creation and sharing features.',
     tech: ['Next.js', 'GraphQL', 'Prisma', 'PostgreSQL'],
     liveUrl: 'https://simply-ai-orcin.vercel.app',
-    images:  ['/project-images/simply-ai/Capture1.PNG', '/project-images/simply-ai/Capture2.PNG', '/project-images/simply-ai/Capture3.PNG', '/project-images/simply-ai/Capture4.PNG', '/project-images/simply-ai/Capture5.PNG', '/project-images/simply-ai/Capture6.PNG', '/project-images/simply-ai/Capture7.PNG', '/project-images/simply-ai/Capture8.PNG', '/project-images/simply-ai/Capture9.PNG', '/project-images/simply-ai/Capture10.PNG']
-  },{
+    images: ['/project-images/simply-ai/Capture1.PNG', '/project-images/simply-ai/Capture2.PNG', '/project-images/simply-ai/Capture3.PNG', '/project-images/simply-ai/Capture4.PNG', '/project-images/simply-ai/Capture5.PNG', '/project-images/simply-ai/Capture6.PNG', '/project-images/simply-ai/Capture7.PNG', '/project-images/simply-ai/Capture8.PNG', '/project-images/simply-ai/Capture9.PNG', '/project-images/simply-ai/Capture10.PNG']
+  }, {
     id: 'project-3',
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce solution with real-time inventory management and secure payment processing.',
     tech: ['Php', 'HTML 5', 'MySQL', 'CSS3'],
     liveUrl: 'https://zemenassets.lovestoblog.com',
-    images:  ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
-  },{
+    images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
+  }, {
     id: 'project-4',
     title: 'Analytics Dashboard',
     description: 'Data visualization platform for Education management with interactive charts and reports.',
     tech: ['React', 'D3.js', 'Express', 'MongoDB'],
     liveUrl: 'https://legal-training.vercel.app/admin/dashboard',
-    images:  ['/project-images/Capture1.PNG', '/project-images/Capture2.PNG', '/project-images/Capture3.PNG', '/project-images/Capture4.PNG']
-  },{
+    images: ['/project-images/Capture1.PNG', '/project-images/Capture2.PNG', '/project-images/Capture3.PNG', '/project-images/Capture4.PNG']
+  }, {
     id: 'project-5',
     title: 'Passport ICS management system',
     description: 'A full-stack passport filling and employee management system built for local businesses that gives passport service.',
     tech: ['Php', 'HTML 5', 'MySQL', 'CSS3'],
     liveUrl: 'https://ics-process-management.vercel.app',
-    images:  ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
+    images: ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
   }
 ];
 
@@ -150,7 +151,7 @@ export const experience: Experience[] = [
 
 export const social = {
   github: 'https://github.com/kallSTONE',
-  linkedin: 'https://linkedin.com/kalab-tadesse',
-  twitter: 'https://twitter.com/k',
+  linkedin: 'https://www.linkedin.com/in/kalab-tadesse',
+  telegram: 'https://t.me/kalupt',
   email: 'kalupt9999@gmail.com'
 };

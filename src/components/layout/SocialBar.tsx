@@ -1,7 +1,7 @@
 import {
   Github,
+  Send,
   Linkedin,
-  Twitter,
   Mail,
   Moon,
   Sun,
@@ -30,7 +30,7 @@ export default function IconSidebar() {
   const socialItems = [
     { label: 'GitHub', icon: <Github className="w-5 h-5" />, href: social.github },
     { label: 'LinkedIn', icon: <Linkedin className="w-5 h-5" />, href: social.linkedin },
-    { label: 'Twitter', icon: <Twitter className="w-5 h-5" />, href: social.twitter },
+    { label: 'Telegram', icon: <Send className="w-5 h-5" />, href: social.telegram },
     { label: 'Email', icon: <Mail className="w-5 h-5" />, href: `mailto:${social.email}` },
   ];
 
