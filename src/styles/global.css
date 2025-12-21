@@ -37,6 +37,15 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
+  ::selection {
+    background-color: rgba(var(--color-primary), 0.25);
+    color: rgb(var(--color-text-primary));
+  }
+
+  .dark ::selection {
+    background-color: rgba(var(--color-primary), 0.4);
+  }
+
   html {
     scroll-behavior: smooth;
   }

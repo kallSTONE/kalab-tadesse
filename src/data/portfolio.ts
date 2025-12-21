@@ -18,6 +18,7 @@ import {
   SiPostgresql,
   SiSupabase,
   SiMysql,
+  SiNotion,
 } from 'react-icons/si';
 
 export const skills = [
@@ -50,6 +51,7 @@ export const skills = [
       { name: 'Supabase', icon: SiSupabase },
       { name: 'GitHub', icon: FaGithub },
       { name: 'Git', icon: FaGitAlt },
+      { name: 'Notion', icon: SiNotion },
     ],
   },
 ];
@@ -82,7 +84,7 @@ export const projects: Project[] = [
     id: 'project-1',
     title: 'Education Management App',
     description: 'Online Education Platform with Learning page, Student and Admin dashboard.',
-    tech: ['TypeScript', 'React', 'Firebase', 'Tailwind'],
+    tech: ['TypeScript', 'Next.js', 'Supabase', 'Tailwind'],
     liveUrl: 'https://legal-training.vercel.app',
     images: ['/project-images/legal-training/Capture1.PNG', '/project-images/legal-training/Capture2.PNG', '/project-images/legal-training/Capture3.PNG', '/project-images/legal-training/Capture4.PNG', '/project-images/legal-training/Capture5.PNG', '/project-images/legal-training/Capture6.PNG', '/project-images/legal-training/Capture7.PNG']
   },
@@ -90,7 +92,7 @@ export const projects: Project[] = [
     id: 'project-2',
     title: 'AI tool repository',
     description: 'Modern AI tool sharing application with article and toolkit creation and sharing features.',
-    tech: ['Next.js', 'GraphQL', 'Prisma', 'PostgreSQL'],
+    tech: ['Next.js', 'Tailwind', 'Typescript', 'Supabase'],
     liveUrl: 'https://simply-ai-orcin.vercel.app',
     images: ['/project-images/simply-ai/Capture1.PNG', '/project-images/simply-ai/Capture2.PNG', '/project-images/simply-ai/Capture3.PNG', '/project-images/simply-ai/Capture4.PNG', '/project-images/simply-ai/Capture5.PNG', '/project-images/simply-ai/Capture6.PNG', '/project-images/simply-ai/Capture7.PNG', '/project-images/simply-ai/Capture8.PNG', '/project-images/simply-ai/Capture9.PNG', '/project-images/simply-ai/Capture10.PNG']
   }, {
@@ -104,14 +106,14 @@ export const projects: Project[] = [
     id: 'project-4',
     title: 'Analytics Dashboard',
     description: 'Data visualization platform for Education management with interactive charts and reports.',
-    tech: ['React', 'D3.js', 'Express', 'MongoDB'],
+    tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase'],
     liveUrl: 'https://legal-training.vercel.app/admin/dashboard',
-    images: ['/project-images/Capture1.PNG', '/project-images/Capture2.PNG', '/project-images/Capture3.PNG', '/project-images/Capture4.PNG']
+    images: ['/project-images/analytic-dashboard/Capture1.PNG', '/project-images/analytic-dashboard/Capture2.PNG', '/project-images/analytic-dashboard/Capture3.PNG', '/project-images/analytic-dashboard/Capture4.PNG' , '/project-images/analytic-dashboard/Capture5.PNG', '/project-images/analytic-dashboard/Capture6.PNG', '/project-images/analytic-dashboard/Capture7.PNG']
   }, {
     id: 'project-5',
     title: 'Passport ICS management system',
     description: 'A full-stack passport filling and employee management system built for local businesses that gives passport service.',
-    tech: ['Php', 'HTML 5', 'MySQL', 'CSS3'],
+    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
   }
