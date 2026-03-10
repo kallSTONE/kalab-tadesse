@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <>
       <section id="projects" className="min-h-screen flex items-center justify-center">
-        <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 py-24">
+        <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <SectionTitle
             title="Selected Projects"
             subtitle="Development and design work, organized for quick review"
