@@ -5,7 +5,7 @@ import { social } from '../../data/portfolio';
 export default function Contact() {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
+      <div className="w-full max-w-6xl mx-auto px-6 lg:px-8 py-24">
         <SectionTitle
           title="Get In Touch"
           subtitle="Let's create something great together"
