@@ -3,8 +3,8 @@ import { skills } from '../../data/portfolio';
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 ">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="skills" className="min-h-screen flex items-center justify-center">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-24">
         <SectionTitle
           title="Skills & Technologies"
           subtitle="Tools and technologies I work with regularly"
