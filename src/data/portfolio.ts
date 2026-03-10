@@ -59,12 +59,15 @@ export const skills = [
 
 export interface Project {
   id: string;
+  category: ProjectCategory;
   title: string;
   description: string;
   tech: string[];
   liveUrl: string;
   images: string[];
 }
+
+export type ProjectCategory = 'development' | 'design';
 
 
 export interface Experience {
@@ -82,6 +85,7 @@ export interface Skill {
 export const projects: Project[] = [
   {
     id: 'project-1',
+    category: 'development',
     title: 'Education Management App',
     description: 'Online Education Platform with Learning page, Student and Admin dashboard.',
     tech: ['TypeScript', 'Next.js', 'Supabase', 'Tailwind'],
@@ -90,6 +94,7 @@ export const projects: Project[] = [
   },
   {
     id: 'project-2',
+    category: 'design',
     title: 'AI tool repository',
     description: 'Modern AI tool sharing application with article and toolkit creation and sharing features.',
     tech: ['Next.js', 'Tailwind', 'Typescript', 'Supabase'],
@@ -97,6 +102,7 @@ export const projects: Project[] = [
     images: ['/project-images/simply-ai/Capture1.PNG', '/project-images/simply-ai/Capture2.PNG', '/project-images/simply-ai/Capture3.PNG', '/project-images/simply-ai/Capture4.PNG', '/project-images/simply-ai/Capture5.PNG', '/project-images/simply-ai/Capture6.PNG', '/project-images/simply-ai/Capture7.PNG', '/project-images/simply-ai/Capture8.PNG', '/project-images/simply-ai/Capture9.PNG', '/project-images/simply-ai/Capture10.PNG']
   }, {
     id: 'project-3',
+    category: 'development',
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce solution with real-time inventory management and secure payment processing.',
     tech: ['Php', 'HTML 5', 'MySQL', 'CSS3'],
@@ -104,13 +110,15 @@ export const projects: Project[] = [
     images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
   }, {
     id: 'project-4',
+    category: 'design',
     title: 'Analytics Dashboard',
     description: 'Data visualization platform for Education management with interactive charts and reports.',
     tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase'],
     liveUrl: 'https://legal-training.vercel.app/admin/dashboard',
-    images: ['/project-images/analytic-dashboard/Capture1.PNG', '/project-images/analytic-dashboard/Capture2.PNG', '/project-images/analytic-dashboard/Capture3.PNG', '/project-images/analytic-dashboard/Capture4.PNG' , '/project-images/analytic-dashboard/Capture5.PNG', '/project-images/analytic-dashboard/Capture6.PNG', '/project-images/analytic-dashboard/Capture7.PNG']
+    images: ['/project-images/analytic-dashboard/Capture1.PNG', '/project-images/analytic-dashboard/Capture2.PNG', '/project-images/analytic-dashboard/Capture3.PNG', '/project-images/analytic-dashboard/Capture4.PNG', '/project-images/analytic-dashboard/Capture5.PNG', '/project-images/analytic-dashboard/Capture6.PNG', '/project-images/analytic-dashboard/Capture7.PNG']
   }, {
     id: 'project-5',
+    category: 'development',
     title: 'Passport ICS management system',
     description: 'A full-stack passport filling and employee management system built for local businesses that gives passport service.',
     tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],

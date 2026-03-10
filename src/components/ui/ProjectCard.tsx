@@ -12,12 +12,15 @@ export default function ProjectCard({
   onOpenLive,
   onOpenViewer,
 }: ProjectCardProps) {
+  const visibleTech = project.tech.slice(0, 4);
+  const hiddenTechCount = Math.max(project.tech.length - visibleTech.length, 0);
+
   return (
-    <article className="group relative overflow-hidden rounded-2xl border border-border bg-bg-primary p-4 sm:p-5">
+    <article className="group relative overflow-hidden rounded-xl border border-border bg-bg-primary p-3 sm:p-4">
       <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 gradient-primary" />
 
-      <div className="relative space-y-4">
-        <div className="overflow-hidden rounded-xl border border-border bg-bg-tertiary">
+      <div className="relative space-y-3">
+        <div className="overflow-hidden rounded-lg border border-border bg-bg-tertiary">
           {project.images?.[0] && (
             <img
               src={project.images[0]}
@@ -27,43 +30,48 @@ export default function ProjectCard({
           )}
         </div>
 
-        <div className="space-y-2">
-          <h3 className="text-lg font-semibold text-text-primary sm:text-xl">
+        <div className="space-y-1.5">
+          <h3 className="text-base font-semibold text-text-primary sm:text-lg">
             {project.title}
           </h3>
-          <p className="text-sm leading-relaxed text-text-secondary sm:text-base">
+          <p className="text-xs leading-relaxed text-text-secondary sm:text-sm">
             {project.description}
           </p>
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {project.tech.map((tech) => (
+          {visibleTech.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-primary-10 px-3 py-1 text-xs font-medium text-primary"
+              className="rounded-full bg-primary-10 px-2.5 py-1 text-[11px] font-medium text-primary"
             >
               {tech}
             </span>
           ))}
+          {hiddenTechCount > 0 && (
+            <span className="rounded-full bg-bg-tertiary px-2.5 py-1 text-[11px] font-medium text-text-tertiary">
+              +{hiddenTechCount}
+            </span>
+          )}
         </div>
 
         <div className="grid gap-3 sm:grid-cols-2">
           <button
             type="button"
             onClick={() => onOpenLive(project)}
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-3 py-2 text-xs font-medium text-white transition-opacity hover:opacity-90"
           >
-            <ExternalLink className="h-4 w-4" />
-            Open Live Project
+            <ExternalLink className="h-3.5 w-3.5" />
+            Open Live
           </button>
 
           <button
             type="button"
             onClick={() => onOpenViewer(project)}
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary-30 bg-primary-10 px-4 py-2.5 text-sm font-medium text-primary transition-colors hover:bg-primary-20"
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary-30 bg-primary-10 px-3 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary-20"
           >
-            <MonitorSmartphone className="h-4 w-4" />
-            Open In Web Viewer
+            <MonitorSmartphone className="h-3.5 w-3.5" />
+            Web Viewer
           </button>
         </div>
       </div>
