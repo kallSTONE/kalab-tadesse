@@ -51,7 +51,7 @@ export default function ProjectCard({
             className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-text-primary transition-colors hover:border-primary-30 hover:text-primary"
           >
             <ExternalLink className="h-3.5 w-3.5" />
-            Open Live
+            Open New Tab
           </button>
 
           <button
@@ -60,7 +60,7 @@ export default function ProjectCard({
             className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-text-primary transition-colors hover:border-primary-30 hover:text-primary"
           >
             <MonitorSmartphone className="h-3.5 w-3.5" />
-            Web Viewer
+            My Web Viewer
           </button>
         </div>
       </div>

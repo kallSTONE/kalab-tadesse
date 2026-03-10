@@ -15,7 +15,6 @@ import {
   SiTailwindcss,
   SiJavascript,
   SiTypescript,
-  SiPostgresql,
   SiSupabase,
   SiMysql,
   SiNotion,
@@ -94,7 +93,7 @@ export const projects: Project[] = [
   },
   {
     id: 'project-2',
-    category: 'design',
+    category: 'development',
     title: 'AI tool repository',
     description: 'Modern AI tool sharing application with article and toolkit creation and sharing features.',
     tech: ['Next.js', 'Tailwind', 'Typescript', 'Supabase'],
@@ -110,7 +109,7 @@ export const projects: Project[] = [
     images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
   }, {
     id: 'project-4',
-    category: 'design',
+    category: 'development',
     title: 'Analytics Dashboard',
     description: 'Data visualization platform for Education management with interactive charts and reports.',
     tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase'],
@@ -124,6 +123,26 @@ export const projects: Project[] = [
     tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
+  }, {
+    id: 'project-6',
+    category: 'design',
+    title: 'Graphic Design Showcase',
+    description: 'Brand, layout, and visual communication pieces curated as a scroll-first gallery.',
+    tech: ['Branding', 'Poster Design', 'Visual Layout', 'Graphics'],
+    liveUrl: 'https://ics-process-management.vercel.app',
+    images: [
+      '/project-images/graphics/1.png',
+      '/project-images/graphics/1%20(2).png',
+      '/project-images/graphics/2.png',
+      '/project-images/graphics/3.png',
+      '/project-images/graphics/8.png',
+      '/project-images/graphics/10.png',
+      '/project-images/graphics/12.png',
+      '/project-images/graphics/15.png',
+      '/project-images/graphics/16%20(2).png',
+      '/project-images/graphics/Echo%20Boy%20Logo.png',
+      '/project-images/graphics/FoodBorne%20Disease.png'
+    ]
   }
 ];
 
