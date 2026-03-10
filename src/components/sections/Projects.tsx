@@ -8,7 +8,10 @@ export default function Projects() {
   const [activeTab, setActiveTab] = useState<ProjectCategory>('development');
   const [viewerProject, setViewerProject] = useState<Project | null>(null);
 
-  const visibleProjects = projects.filter((project) => project.category === activeTab);
+  const developmentProjects = projects;
+  const designProject =
+    projects.find((project) => project.category === 'design') ?? null;
+  const designImages = designProject?.images ?? [];
 
   const handleOpenLive = (project: Project) => {
     window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
@@ -26,12 +29,12 @@ export default function Projects() {
           />
 
           <div className="space-y-6">
-            <div className="inline-flex w-full max-w-md rounded-xl border border-border bg-bg-secondary p-1" role="tablist" aria-label="Project categories">
+            <div className="flex w-full max-w-md border-b border-border" role="tablist" aria-label="Project categories">
               <button
                 type="button"
                 role="tab"
                 aria-selected={activeTab === 'development'}
-                className={`w-1/2 rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${activeTab === 'development' ? 'bg-primary text-white' : 'text-text-secondary hover:text-text-primary hover:bg-bg-tertiary'}`}
+                className={`w-1/2 border-b-2 px-4 py-2.5 text-sm font-medium transition-colors ${activeTab === 'development' ? 'border-primary text-primary' : 'border-transparent text-text-secondary hover:text-text-primary'}`}
                 onClick={() => setActiveTab('development')}
               >
                 Development
@@ -40,29 +43,50 @@ export default function Projects() {
                 type="button"
                 role="tab"
                 aria-selected={activeTab === 'design'}
-                className={`w-1/2 rounded-lg px-4 py-2.5 text-sm font-medium transition-colors ${activeTab === 'design' ? 'bg-primary text-white' : 'text-text-secondary hover:text-text-primary hover:bg-bg-tertiary'}`}
+                className={`w-1/2 border-b-2 px-4 py-2.5 text-sm font-medium transition-colors ${activeTab === 'design' ? 'border-primary text-primary' : 'border-transparent text-text-secondary hover:text-text-primary'}`}
                 onClick={() => setActiveTab('design')}
               >
                 Design
               </button>
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {visibleProjects.map((project) => (
-                <ProjectCard
-                  key={project.id}
-                  project={project}
-                  onOpenLive={handleOpenLive}
-                  onOpenViewer={handleOpenViewer}
-                />
-              ))}
+            {activeTab === 'development' ? (
+              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                {developmentProjects.map((project) => (
+                  <ProjectCard
+                    key={project.id}
+                    project={project}
+                    onOpenLive={handleOpenLive}
+                    onOpenViewer={handleOpenViewer}
+                  />
+                ))}
 
-              {visibleProjects.length === 0 && (
-                <div className="col-span-full rounded-xl border border-border bg-bg-secondary p-6 text-sm text-text-secondary">
-                  No projects are in this category yet.
-                </div>
-              )}
-            </div>
+                {developmentProjects.length === 0 && (
+                  <div className="col-span-full rounded-xl p-6 text-sm text-text-secondary">
+                    No projects are available yet.
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                {designImages.map((image, index) => (
+                  <article key={`${designProject?.id}-image-${index}`} className="overflow-hidden rounded-xl">
+                    <img
+                      src={image}
+                      alt={`${designProject?.title ?? 'Design project'} preview ${index + 1}`}
+                      className="aspect-[16/10] h-full w-full object-cover"
+                      loading="lazy"
+                    />
+                  </article>
+                ))}
+
+                {designImages.length === 0 && (
+                  <div className="col-span-full rounded-xl p-6 text-sm text-text-secondary">
+                    No design images are available yet.
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </section>

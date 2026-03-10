@@ -10,18 +10,15 @@ import Contact from './components/sections/Contact';
 function App() {
   return (
     <div className="min-h-screen">
-
       <Header />
-
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Contact />
-      </main>
-
+        <main>
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Contact />
+        </main>
       <Footer />
     </div>
   );

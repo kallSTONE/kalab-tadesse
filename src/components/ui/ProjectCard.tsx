@@ -16,19 +16,8 @@ export default function ProjectCard({
   const hiddenTechCount = Math.max(project.tech.length - visibleTech.length, 0);
 
   return (
-    <article className="group relative overflow-hidden rounded-xl border border-border bg-bg-primary p-3 sm:p-4">
-      <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 gradient-primary" />
-
-      <div className="relative space-y-3">
-        <div className="overflow-hidden rounded-lg border border-border bg-bg-tertiary">
-          {project.images?.[0] && (
-            <img
-              src={project.images[0]}
-              alt={project.title}
-              className="aspect-[16/10] h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          )}
-        </div>
+    <article className="rounded-xl p-3 sm:p-4">
+      <div className="space-y-3">
 
         <div className="space-y-1.5">
           <h3 className="text-base font-semibold text-text-primary sm:text-lg">
