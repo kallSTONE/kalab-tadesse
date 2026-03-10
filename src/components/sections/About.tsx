@@ -26,8 +26,8 @@ const itemVariants = {
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center">
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-24">
+    <section id="about" className="py-24">
+      <div className="max-w-7xl mx-auto px-6">
         <SectionTitle title="About Me" />
 
         <motion.div

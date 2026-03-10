@@ -9,8 +9,8 @@ export default function Projects() {
 
   return (
     <>
-      <section id="projects" className="min-h-screen flex items-center justify-center">
-        <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-24">
+      <section id="projects" className="py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionTitle
             title="Selected Projects"
             subtitle="A collection of work I'm proud of"

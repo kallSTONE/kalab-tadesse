@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 gradient-radial pointer-events-none"></div>
 
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-24 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 relative z-10">
         <div className="max-w-4xl  md:flex flex-row gap-8 items-center">
           <div className="space-y-6">
             <div className="space-y-2">
