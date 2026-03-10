@@ -3,8 +3,8 @@ import { experience } from '../../data/portfolio';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="experience" className="min-h-screen flex items-center justify-center border-t border-border">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
         <SectionTitle
           title="Experience"
           subtitle="My professional journey"
