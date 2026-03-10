@@ -45,7 +45,7 @@ export default function Header() {
         </div>
       )}
 
-      <div className="hidden md:block">
+      <div className="hidden">
         <SocialBar />
       </div>
 
