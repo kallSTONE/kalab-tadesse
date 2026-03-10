@@ -6,7 +6,7 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 1, // ⬅️ 1 second gap between paragraphs
+      staggerChildren: 0.22,
     },
   },
 };
@@ -35,19 +35,19 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="space-y-4 text-base text-text-secondary leading-relaxed"
+          className="max-w-3xl space-y-4 text-base leading-relaxed text-text-secondary"
         >
           <motion.p variants={itemVariants}>
             Full-stack developer with 2 years of experience building scalable,
             user-focused web applications.
           </motion.p>
 
-          <motion.p variants={itemVariants} className="opacity-90">
+          <motion.p variants={itemVariants}>
             I focus on clean solutions, performance, and maintainable
             JavaScript across frontend and backend.
           </motion.p>
 
-          <motion.p variants={itemVariants} className="opacity-70">
+          <motion.p variants={itemVariants}>
             AI assists my workflow, but every output is reviewed and validated.
           </motion.p>
         </motion.div>

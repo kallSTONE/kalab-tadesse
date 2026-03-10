@@ -33,8 +33,9 @@
 
   body {
     @apply bg-bg-primary text-text-primary antialiased;
+    line-height: 1.6;
     font-feature-settings: 'rlig' 1, 'calt' 1;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   ::selection {
@@ -151,21 +152,20 @@
   }
 
   .glass {
-    background: rgba(var(--color-bg-secondary), 0.7);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(var(--color-bg-primary), 0.9);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
   }
 
   .gradient-primary {
     background: linear-gradient(135deg,
-        rgba(var(--color-primary), 0.1) 0%,
-        rgba(var(--color-primary), 0.05) 50%,
-        transparent 100%);
+        rgba(var(--color-primary), 0.04) 0%,
+        transparent 70%);
   }
 
   .gradient-radial {
     background: radial-gradient(circle at top left,
-        rgba(var(--color-primary), 0.15),
-        transparent 50%);
+        rgba(var(--color-primary), 0.08),
+        transparent 60%);
   }
 }

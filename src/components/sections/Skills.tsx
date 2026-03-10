@@ -13,7 +13,7 @@ export default function Skills() {
         <div className="grid md:grid-cols-3 gap-10">
           {skills.map((group) => (
             <div key={group.category}>
-              <h3 className="mb-6 text-lg font-semibold text-primary">
+              <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.14em] text-text-tertiary">
                 {group.category}
               </h3>
 
@@ -21,12 +21,9 @@ export default function Skills() {
                 {group.items.map(({ name, icon: Icon }) => (
                   <li
                     key={name}
-                    className="flex items-center gap-3 p-3 rounded-lg border border-border
-                               text-text-secondary hover:text-text-primary
-                               hover:border-primary/40 hover:bg-primary/5
-                               transition-all"
+                    className="flex items-center gap-3 rounded-md border border-border px-3 py-2 text-text-secondary transition-colors hover:text-text-primary"
                   >
-                    <Icon className="text-xl group-hover:text-primary transition-colors" />
+                    <Icon className="text-xl text-text-tertiary" />
                     <span className="text-sm font-medium hidden md:block">{name}</span>
                   </li>
                 ))}

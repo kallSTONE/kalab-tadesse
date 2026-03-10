@@ -6,19 +6,19 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 gradient-radial pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24 relative z-10">
-        <div className="max-w-4xl  md:flex flex-row gap-8 items-center">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-8 py-24 relative z-10">
+        <div className="w-full max-w-4xl md:flex flex-row gap-8 items-center">
           <div className="space-y-6">
-            <div className="space-y-2">
-              <p className="text-lg font-medium text-primary uppercase tracking-wider">
+            <div className="space-y-3">
+              <p className="text-sm font-medium text-text-secondary uppercase tracking-[0.18em]">
                 Full Stack Developer
               </p>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+              <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
                 Kalab Tadesse
               </h1>
             </div>
 
-            <p className="text-lg md:text-xl text-text-secondary leading-relaxed max-w-2xl">
+            <p className="text-base md:text-lg text-text-secondary leading-relaxed max-w-2xl">
               I craft elegant digital experiences that solve real problems.
               Specializing in modern web applications with a focus on performance and user experience.
             </p>
@@ -35,8 +35,8 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="hidden md:block w-48 h-48 md:w-64 md:h-64 flex-shrink-0 overflow-hidden rounded-full">
-            <img src="/echoboy.png" className='opacity-80' draggable={false} alt="echoboy" />
+          <div className="hidden md:block w-44 h-44 md:w-56 md:h-56 flex-shrink-0 overflow-hidden rounded-full border border-border">
+            <img src="/echoboy.png" className="opacity-70 grayscale" draggable={false} alt="echoboy" />
           </div>
 
         </div>

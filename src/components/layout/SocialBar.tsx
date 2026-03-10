@@ -35,8 +35,7 @@ export default function IconSidebar() {
   ];
 
   return (
-    <aside className="fixed left-[40%] md:left-4 bottom-0 top-0 z-40 flex-col items-center justify-between py-8 h-full ">
-      {/* Top Nav Icons */}
+    <aside className="fixed bottom-0 top-0 left-0 md:left-4 z-40 flex h-full flex-col items-center justify-between border-r border-border bg-bg-primary px-3 py-8 md:border-r-0 md:bg-transparent md:px-0">
       <div className="flex flex-col items-center gap-6 relative mb-12">
         {navItems.map((item) => (
           <div
@@ -47,13 +46,13 @@ export default function IconSidebar() {
           >
             <a
               href={item.href}
-              className="text-text-secondary hover:text-text-primary transition-colors md:opacity-60 "
+              className="text-text-tertiary transition-colors hover:text-text-primary"
               aria-label={item.label}
             >
               {item.icon}
             </a>
             {hovered === item.label && (
-              <span className="absolute left-8 bg-bg-primary text-text-primary text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap">
+              <span className="absolute left-8 whitespace-nowrap rounded border border-border bg-bg-secondary px-2 py-1 text-xs text-text-primary">
                 {item.label}
               </span>
             )}
@@ -61,7 +60,6 @@ export default function IconSidebar() {
         ))}
       </div>
 
-      {/* Bottom Social Icons + Theme */}
       <div className="flex flex-col items-center gap-6 relative">
         {socialItems.map((item) => (
           <div
@@ -74,13 +72,13 @@ export default function IconSidebar() {
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text-secondary md:opacity-60 hover:text-primary transition-colors"
+              className="text-text-tertiary transition-colors hover:text-primary"
               aria-label={item.label}
             >
               {item.icon}
             </a>
             {hovered === item.label && (
-              <span className="absolute left-8 bg-bg-primary text-text-primary text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap">
+              <span className="absolute left-8 whitespace-nowrap rounded border border-border bg-bg-secondary px-2 py-1 text-xs text-text-primary">
                 {item.label}
               </span>
             )}
@@ -96,13 +94,13 @@ export default function IconSidebar() {
         >
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg hover:bg-bg-tertiary transition-colors"
+            className="rounded-md border border-border p-2 text-text-secondary transition-colors hover:text-text-primary"
             aria-label="Toggle theme"
           >
             {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
           {hovered === 'Toggle Theme' && (
-            <span className="absolute left-8 bg-bg-primary text-text-primary text-xs px-2 py-1 rounded shadow-lg whitespace-nowrap">
+            <span className="absolute left-8 whitespace-nowrap rounded border border-border bg-bg-secondary px-2 py-1 text-xs text-text-primary">
               Toggle Theme
             </span>
           )}

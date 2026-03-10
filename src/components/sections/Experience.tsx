@@ -12,16 +12,16 @@ export default function Experience() {
 
         <div className="space-y-12 max-w-3xl">
           {experience.map((exp, index) => (
-            <div key={index} className="relative pl-8">
-              <div className="absolute left-0 top-0 w-2 h-2 -ml-[5px] rounded-full bg-primary"></div>
+            <div key={index} className="relative border-l border-border pl-6">
+              <div className="absolute -left-[5px] top-2 h-2 w-2 rounded-full border border-border bg-bg-primary"></div>
 
               <div className="space-y-3">
                 <div className="space-y-1">
-                  <h3 className="text-xl font-semibold text-text-primary">
+                  <h3 className="text-lg font-semibold text-text-primary">
                     {exp.role}
                   </h3>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-text-secondary">
-                    <span className="font-medium text-primary">
+                    <span className="font-medium text-text-primary">
                       {exp.company}
                     </span>
                     <span className="hidden sm:inline text-text-tertiary">•</span>

@@ -5,12 +5,12 @@ interface SectionTitleProps {
 
 export default function SectionTitle({ title, subtitle }: SectionTitleProps) {
   return (
-    <div className="space-y-2 mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+    <div className="mb-12 space-y-3">
+      <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-text-secondary">
+        <p className="max-w-2xl text-sm uppercase tracking-[0.14em] text-text-tertiary">
           {subtitle}
         </p>
       )}

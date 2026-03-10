@@ -20,11 +20,11 @@ export default function Contact() {
           <div className="grid sm:grid-cols-2 gap-4">
             <a
               href={`mailto:${social.email}`}
-              className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary-30 bg-bg-secondary hover:bg-primary-10 transition-all group"
+              className="group flex items-center gap-3 rounded-md border border-border p-4 transition-colors hover:border-primary-30"
             >
-              <Mail className="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors" />
+              <Mail className="h-5 w-5 text-text-tertiary transition-colors group-hover:text-primary" />
               <div>
-                <p className="text-sm text-text-tertiary">Email</p>
+                <p className="text-xs uppercase tracking-[0.14em] text-text-tertiary">Email</p>
                 <p className="text-text-primary font-medium">{social.email}</p>
               </div>
             </a>
@@ -33,11 +33,11 @@ export default function Contact() {
               href={social.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary-30 bg-bg-secondary hover:bg-primary-10 transition-all group"
+              className="group flex items-center gap-3 rounded-md border border-border p-4 transition-colors hover:border-primary-30"
             >
-              <Linkedin className="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors" />
+              <Linkedin className="h-5 w-5 text-text-tertiary transition-colors group-hover:text-primary" />
               <div>
-                <p className="text-sm text-text-tertiary">LinkedIn</p>
+                <p className="text-xs uppercase tracking-[0.14em] text-text-tertiary">LinkedIn</p>
                 <p className="text-text-primary font-medium">Connect</p>
               </div>
             </a>
@@ -46,11 +46,11 @@ export default function Contact() {
               href={social.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary-30 bg-bg-secondary hover:bg-primary-10 transition-all group"
+              className="group flex items-center gap-3 rounded-md border border-border p-4 transition-colors hover:border-primary-30"
             >
-              <Github className="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors" />
+              <Github className="h-5 w-5 text-text-tertiary transition-colors group-hover:text-primary" />
               <div>
-                <p className="text-sm text-text-tertiary">GitHub</p>
+                <p className="text-xs uppercase tracking-[0.14em] text-text-tertiary">GitHub</p>
                 <p className="text-text-primary font-medium">Follow</p>
               </div>
             </a>
@@ -59,11 +59,11 @@ export default function Contact() {
               href={social.telegram}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 p-4 rounded-lg border border-border hover:border-primary-30 bg-bg-secondary hover:bg-primary-10 transition-all group"
+              className="group flex items-center gap-3 rounded-md border border-border p-4 transition-colors hover:border-primary-30"
             >
-              <Send className="w-5 h-5 text-text-tertiary group-hover:text-primary transition-colors" />
+              <Send className="h-5 w-5 text-text-tertiary transition-colors group-hover:text-primary" />
               <div>
-                <p className="text-sm text-text-tertiary">Telegram</p>
+                <p className="text-xs uppercase tracking-[0.14em] text-text-tertiary">Telegram</p>
                 <p className="text-text-primary font-medium">Message</p>
               </div>
             </a>

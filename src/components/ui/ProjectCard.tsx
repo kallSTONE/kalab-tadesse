@@ -32,13 +32,13 @@ export default function ProjectCard({
           {visibleTech.map((tech) => (
             <span
               key={tech}
-              className="rounded-full bg-primary-10 px-2.5 py-1 text-[11px] font-medium text-primary"
+              className="rounded-full border border-border px-2.5 py-1 text-[11px] font-medium text-text-secondary"
             >
               {tech}
             </span>
           ))}
           {hiddenTechCount > 0 && (
-            <span className="rounded-full bg-bg-tertiary px-2.5 py-1 text-[11px] font-medium text-text-tertiary">
+            <span className="rounded-full border border-border px-2.5 py-1 text-[11px] font-medium text-text-tertiary">
               +{hiddenTechCount}
             </span>
           )}
@@ -48,7 +48,7 @@ export default function ProjectCard({
           <button
             type="button"
             onClick={() => onOpenLive(project)}
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-3 py-2 text-xs font-medium text-white transition-opacity hover:opacity-90"
+            className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-text-primary transition-colors hover:border-primary-30 hover:text-primary"
           >
             <ExternalLink className="h-3.5 w-3.5" />
             Open Live
@@ -57,7 +57,7 @@ export default function ProjectCard({
           <button
             type="button"
             onClick={() => onOpenViewer(project)}
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-primary-30 bg-primary-10 px-3 py-2 text-xs font-medium text-primary transition-colors hover:bg-primary-20"
+            className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-text-primary transition-colors hover:border-primary-30 hover:text-primary"
           >
             <MonitorSmartphone className="h-3.5 w-3.5" />
             Web Viewer
