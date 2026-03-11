@@ -118,33 +118,45 @@ export const projects: Project[] = [
   }, {
     id: 'project-5',
     category: 'development',
+    title: 'Foreign Employment Agency',
+    description: 'A full-stack website to  present services Professionaly and to ease the management of employer and employee requests. 3 Language Supported',
+    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],
+    liveUrl: 'https://foreign-employment-agency.vercel.app',
+    images: ['/project-images/agency/Capture.PNG']
+  },{
+    id: 'project-6',
+    category: 'development',
     title: 'Passport ICS management system',
     description: 'A full-stack passport filling and employee management system built for local businesses that gives passport service.',
     tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
-  }, {
-    id: 'project-6',
+  },{
+    id: 'project-7',
     category: 'design',
     title: 'Graphic Design Showcase',
     description: 'Brand, layout, and visual communication pieces curated as a scroll-first gallery.',
     tech: ['Branding', 'Poster Design', 'Visual Layout', 'Graphics'],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: [
-      '/project-images/graphics/1.png',
+      '/project-images/graphics/8.png',
+      '/project-images/graphics/3.png',
+      '/project-images/graphics/LogoCompiled.png',
+      '/project-images/graphics/taxshield.jpg',
       '/project-images/graphics/1%20(2).png',
       '/project-images/graphics/2.png',
-      '/project-images/graphics/3.png',
-      '/project-images/graphics/8.png',
+      '/project-images/graphics/FoodBorne%20Disease.png',
       '/project-images/graphics/10.png',
       '/project-images/graphics/12.png',
+      '/project-images/graphics/1.png',
       '/project-images/graphics/15.png',
       '/project-images/graphics/16%20(2).png',
       '/project-images/graphics/Echo%20Boy%20Logo.png',
-      '/project-images/graphics/FoodBorne%20Disease.png'
+      '/project-images/graphics/tenawo.png'
     ]
   }
 ];
+
 
 export const experience: Experience[] = [
   {
