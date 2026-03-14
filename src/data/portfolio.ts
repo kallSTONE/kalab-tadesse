@@ -139,20 +139,23 @@ export const projects: Project[] = [
     tech: ['Branding', 'Poster Design', 'Visual Layout', 'Graphics'],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: [
-      '/project-images/graphics/8.png',
-      '/project-images/graphics/3.png',
-      '/project-images/graphics/LogoCompiled.png',
-      '/project-images/graphics/taxshield.jpg',
-      '/project-images/graphics/1%20(2).png',
+      '/project-images/graphics/8.avif',
+      '/project-images/graphics/3.avif',
+      '/project-images/graphics/LogoCompiled.avif',
+      '/project-images/graphics/taxshield.avif',
+      '/project-images/graphics/1%20(2).avif',
       '/project-images/graphics/2.png',
-      '/project-images/graphics/FoodBorne%20Disease.png',
+      '/project-images/graphics/FoodBorne%20Disease.avif',
       '/project-images/graphics/10.png',
+      '/project-images/graphics/logo2.avif',
+      '/project-images/graphics/logo3.avif',
+      '/project-images/graphics/logo6.avif',
       '/project-images/graphics/12.png',
       '/project-images/graphics/1.png',
       '/project-images/graphics/15.png',
       '/project-images/graphics/16%20(2).png',
-      '/project-images/graphics/Echo%20Boy%20Logo.png',
-      '/project-images/graphics/tenawo.png'
+      '/project-images/graphics/Echo%20Boy%20Logo.avif',
+      '/project-images/graphics/tenawo.avif'
     ]
   }
 ];
