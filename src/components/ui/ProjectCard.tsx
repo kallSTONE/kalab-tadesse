@@ -20,9 +20,20 @@ export default function ProjectCard({
       <div className="space-y-3">
 
         <div className="space-y-1.5">
-          <h3 className="text-base font-semibold text-text-primary sm:text-lg">
-            {project.title}
-          </h3>
+          <div className="flex items-center gap-2">
+            <h3 className="text-base font-semibold text-text-primary sm:text-lg">
+              {project.title}
+            </h3>
+
+            <button
+              type="button"
+              onClick={() => onOpenViewer(project)}
+              aria-label={`Open ${project.title} viewer`}
+              className="inline-flex items-center text-text-primary transition-colors hover:text-primary"
+            >
+              <MonitorSmartphone className="h-3.5 w-3.5" />
+            </button>
+          </div>
           <p className="text-xs leading-relaxed text-text-secondary sm:text-sm">
             {project.description}
           </p>
@@ -52,14 +63,6 @@ export default function ProjectCard({
           >
             <ExternalLink className="h-3.5 w-3.5" />
             Open in New Tab
-          </button>
-
-          <button
-            type="button"
-            onClick={() => onOpenViewer(project)}
-            className="inline-flex items-center justify-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-text-primary transition-colors hover:border-primary-30 hover:text-primary"
-          >
-            <MonitorSmartphone className="h-3.5 w-3.5" />
           </button>
         </div>
       </div>

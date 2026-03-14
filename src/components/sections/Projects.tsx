@@ -125,7 +125,7 @@ export default function Projects() {
                         {leftTrackImages.map((image: string, index: number) => (
                           <div
                             key={`design-left-${image}-${index}`}
-                            className="relative overflow-hidden rounded-lg border border-border bg-bg-primary min-h-[180px]"
+                            className="relative overflow-hidden rounded-lg border border-border bg-bg-primary"
                           >
                             {!loadedDesignImages[image] && (
                               <div
@@ -158,7 +158,7 @@ export default function Projects() {
                         {rightTrackImages.map((image: string, index: number) => (
                           <div
                             key={`design-right-${image}-${index}`}
-                            className="relative overflow-hidden rounded-lg border border-border bg-bg-primary min-h-[180px]"
+                            className="relative overflow-hidden rounded-lg border border-border bg-bg-primary"
                           >
                             {!loadedDesignImages[image] && (
                               <div
