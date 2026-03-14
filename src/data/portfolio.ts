@@ -87,7 +87,7 @@ export const projects: Project[] = [
     category: 'development',
     title: 'Education Management App',
     description: 'Online Education Platform with Learning page, Student and Admin dashboard.',
-    tech: ['TypeScript', 'Next.js', 'Supabase', 'Tailwind'],
+    tech: ['TypeScript', 'Next.js', 'Supabase', 'Tailwind', 'Git','GitHub'],
     liveUrl: 'https://legal-training.vercel.app',
     images: ['/project-images/legal-training/Capture1.PNG', '/project-images/legal-training/Capture2.PNG', '/project-images/legal-training/Capture3.PNG', '/project-images/legal-training/Capture4.PNG', '/project-images/legal-training/Capture5.PNG', '/project-images/legal-training/Capture6.PNG', '/project-images/legal-training/Capture7.PNG']
   },
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     category: 'development',
     title: 'AI tool repository',
     description: 'Modern AI tool sharing application with article and toolkit creation and sharing features.',
-    tech: ['Next.js', 'Tailwind', 'Typescript', 'Supabase'],
+    tech: ['Next.js', 'Tailwind', 'Typescript', 'Supabase', 'Git','GitHub'],
     liveUrl: 'https://simply-ai-orcin.vercel.app',
     images: ['/project-images/simply-ai/Capture1.PNG', '/project-images/simply-ai/Capture2.PNG', '/project-images/simply-ai/Capture3.PNG', '/project-images/simply-ai/Capture4.PNG', '/project-images/simply-ai/Capture5.PNG', '/project-images/simply-ai/Capture6.PNG', '/project-images/simply-ai/Capture7.PNG', '/project-images/simply-ai/Capture8.PNG', '/project-images/simply-ai/Capture9.PNG', '/project-images/simply-ai/Capture10.PNG']
   }, {
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     category: 'development',
     title: 'E-Commerce Platform',
     description: 'A full-stack e-commerce solution with real-time inventory management and secure payment processing.',
-    tech: ['Php', 'HTML 5', 'MySQL', 'CSS3'],
+    tech: ['Php', 'HTML 5', 'MySQL', 'CSS3', 'Git','GitHub'],
     liveUrl: 'https://zemenassets.lovestoblog.com',
     images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
   }, {
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     category: 'development',
     title: 'Analytics Dashboard',
     description: 'Data visualization platform for Education management with interactive charts and reports.',
-    tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase'],
+    tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase', 'Git','GitHub'],
     liveUrl: 'https://legal-training.vercel.app/admin/dashboard',
     images: ['/project-images/analytic-dashboard/Capture1.PNG', '/project-images/analytic-dashboard/Capture2.PNG', '/project-images/analytic-dashboard/Capture3.PNG', '/project-images/analytic-dashboard/Capture4.PNG', '/project-images/analytic-dashboard/Capture5.PNG', '/project-images/analytic-dashboard/Capture6.PNG', '/project-images/analytic-dashboard/Capture7.PNG']
   }, {
@@ -120,7 +120,7 @@ export const projects: Project[] = [
     category: 'development',
     title: 'Foreign Employment Agency',
     description: 'A full-stack website to  present services Professionaly and to ease the management of employer and employee requests. 3 Language Supported',
-    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],
+    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite', 'Git','GitHub'],
     liveUrl: 'https://foreign-employment-agency.vercel.app',
     images: ['/project-images/agency/Capture.PNG']
   },{
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     category: 'development',
     title: 'Passport ICS management system',
     description: 'A full-stack passport filling and employee management system built for local businesses that gives passport service.',
-    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite'],
+    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite', 'Git','GitHub'],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
   },{
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     category: 'design',
     title: 'Graphic Design Showcase',
     description: 'Brand, layout, and visual communication pieces curated as a scroll-first gallery.',
-    tech: ['Branding', 'Poster Design', 'Visual Layout', 'Graphics'],
+    tech: ['Branding', 'Poster Design', 'Visual Layout', 'Graphics',],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: [
       '/project-images/graphics/8.avif',
