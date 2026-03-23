@@ -8,6 +8,8 @@ import {
   FaPhp,
   FaRobot,
   FaGithub,
+  FaMongoDB,
+  FaExpressJs,
 } from 'react-icons/fa';
 
 import {
@@ -18,6 +20,8 @@ import {
   SiSupabase,
   SiMysql,
   SiNotion,
+  SiMongoDB,
+  SiExpressJS.
 } from 'react-icons/si';
 
 export const skills = [
@@ -40,6 +44,8 @@ export const skills = [
       { name: 'MySQL', icon: SiMysql },
       { name: 'PHP', icon: FaPhp },
       { name: 'Node.js', icon: FaNodeJs },
+      { name: 'MongoDB', icon: FaMongoDB || SiMongoDB },
+      { name: 'Express.js', icon: FaExpressJs || SiExpressJS },
       // { name: 'PostgreSQL', icon: SiPostgresql },
     ],
   },
@@ -88,7 +94,7 @@ export const projects: Project[] = [
     title: 'Education Management App',
     description: 'Online Education Platform with Learning page, Student and Admin dashboard.',
     tech: ['TypeScript', 'Next.js', 'Supabase', 'Tailwind', 'Git','GitHub'],
-    liveUrl: 'https://legal-training.vercel.app',
+    liveUrl: 'https://earn-neway.vercel.app',
     images: ['/project-images/legal-training/Capture1.PNG', '/project-images/legal-training/Capture2.PNG', '/project-images/legal-training/Capture3.PNG', '/project-images/legal-training/Capture4.PNG', '/project-images/legal-training/Capture5.PNG', '/project-images/legal-training/Capture6.PNG', '/project-images/legal-training/Capture7.PNG']
   },
   {
