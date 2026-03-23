@@ -21,7 +21,7 @@ import {
   SiMysql,
   SiNotion,
   SiMongoDB,
-  SiExpressJS.
+  SiExpressJS,
 } from 'react-icons/si';
 
 export const skills = [
