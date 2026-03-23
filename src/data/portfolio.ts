@@ -8,8 +8,6 @@ import {
   FaPhp,
   FaRobot,
   FaGithub,
-  FaMongoDB,
-  FaExpressJs,
 } from 'react-icons/fa';
 
 import {
@@ -20,8 +18,8 @@ import {
   SiSupabase,
   SiMysql,
   SiNotion,
-  SiMongoDB,
-  SiExpressJS,
+  SiMongodb,
+  SiExpress,
 } from 'react-icons/si';
 
 export const skills = [
@@ -44,8 +42,8 @@ export const skills = [
       { name: 'MySQL', icon: SiMysql },
       { name: 'PHP', icon: FaPhp },
       { name: 'Node.js', icon: FaNodeJs },
-      { name: 'MongoDB', icon: FaMongoDB || SiMongoDB },
-      { name: 'Express.js', icon: FaExpressJs || SiExpressJS },
+      { name: 'MongoDB', icon: SiMongodb },
+      { name: 'Express.js', icon: SiExpress },
       // { name: 'PostgreSQL', icon: SiPostgresql },
     ],
   },
