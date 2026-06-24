@@ -167,6 +167,16 @@ export const projects: Project[] = [
 
 export const experience: Experience[] = [
   {
+    role: 'Freelance Developer',
+    company: 'Private Client ',
+    period: '2025 NOV-PRESENT',
+    description: [
+      'Created and managed course, lesson and quiz creation and management dashboard.',
+      'Built a scalable student course access and tracking dashboard.',
+      'Implemented strict course and lesson access'
+    ]
+  },
+  {
     role: 'Software Developer Intern',
     company: 'WCU.',
     period: '2025 JUN - SEP',
@@ -177,21 +187,22 @@ export const experience: Experience[] = [
     ]
   },
   {
-    role: 'Full Stack Developer',
-    company: 'የኢትዮፕያ ጠበቆች ማህበር ',
-    period: '2025 - NOV-PRESENT',
+    role: 'Adalo Mobile App Developer',
+    company: 'Nisir Choir',
+    period: '2025 OCT',
     description: [
-      'Created and managed course, lesson and quiz creation and management dashboard.',
-      'Built a scalable student course access and tracking dashboard.',
-      'Implemented strict course and lesson access'
+      'Created a song creation and edition with audio upload',
+      'Create Dynamic Songs screen for each song that opens when card is clicked',
     ]
   },
   {
-    role: 'Adalo Mobile App Developer',
-    company: 'Nisir Choir',
-    period: '2025 - OCT',
+    role: 'Full stack developer',
+    company: 'Personal',
+    period: '2024 Nov - 2025 Nov',
     description: [
-      'Created a song creation and edition with audio upload',
+      'Designed session-based access control logic with differentiated usage limits for guest and authenticated users.',
+      'Built an AI-powered admin assistant that auto-generates tool metadata and tool recommendation system based on categories and metadata.',
+      'Integrated Microsoft Clarity analytics to track user behavior and optimize UI performance.',
       'Create Dynamic Songs screen for each song that opens when card is clicked',
     ]
   }
