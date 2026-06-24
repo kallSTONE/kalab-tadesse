@@ -106,11 +106,11 @@ export const projects: Project[] = [
   }, {
     id: 'project-3',
     category: 'development',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory management and secure payment processing.',
-    tech: ['Php', 'HTML 5', 'MySQL', 'CSS3', 'Git','GitHub'],
-    liveUrl: 'https://zemenassets.lovestoblog.com',
-    images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
+    title: 'Foreign Employment Agency',
+    description: 'A full-stack website to  present services Professionaly and to ease the management of employer and employee requests. 3 Language Supported',
+    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite', 'Git','GitHub'],
+    liveUrl: 'https://foreign-employment-agency.vercel.app',
+    images: ['/project-images/agency/Capture.PNG']
   }, {
     id: 'project-4',
     category: 'development',
@@ -119,16 +119,8 @@ export const projects: Project[] = [
     tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase', 'Git','GitHub'],
     liveUrl: 'https://legal-training.vercel.app/admin/dashboard',
     images: ['/project-images/analytic-dashboard/Capture1.PNG', '/project-images/analytic-dashboard/Capture2.PNG', '/project-images/analytic-dashboard/Capture3.PNG', '/project-images/analytic-dashboard/Capture4.PNG', '/project-images/analytic-dashboard/Capture5.PNG', '/project-images/analytic-dashboard/Capture6.PNG', '/project-images/analytic-dashboard/Capture7.PNG']
-  }, {
-    id: 'project-5',
-    category: 'development',
-    title: 'Foreign Employment Agency',
-    description: 'A full-stack website to  present services Professionaly and to ease the management of employer and employee requests. 3 Language Supported',
-    tech: ['Typescript', 'Tailwind', 'Supabase', 'Vite', 'Git','GitHub'],
-    liveUrl: 'https://foreign-employment-agency.vercel.app',
-    images: ['/project-images/agency/Capture.PNG']
   },{
-    id: 'project-6',
+    id: 'project-5',
     category: 'development',
     title: 'Passport ICS management system',
     description: 'A full-stack passport filling and employee management system built for local businesses that gives passport service.',
@@ -136,7 +128,7 @@ export const projects: Project[] = [
     liveUrl: 'https://ics-process-management.vercel.app',
     images: ['/project-images/passport-flow/Capture1.PNG', '/project-images/passport-flow/Capture2.PNG', '/project-images/passport-flow/Capture3.PNG', '/project-images/passport-flow/Capture4.PNG', '/project-images/passport-flow/Capture5.PNG', '/project-images/passport-flow/Capture6.PNG', '/project-images/passport-flow/Capture7.PNG', '/project-images/passport-flow/Capture8.PNG']
   },{
-    id: 'project-7',
+    id: 'project-6',
     category: 'design',
     title: 'Graphic Design Showcase',
     description: 'Brand, layout, and visual communication pieces curated as a scroll-first gallery.',
@@ -161,6 +153,14 @@ export const projects: Project[] = [
       '/project-images/graphics/Echo%20Boy%20Logo.avif',
       '/project-images/graphics/tenawo.avif'
     ]
+  }, {
+    id: 'project-7',
+    category: 'development',
+    title: 'E-Commerce Platform',
+    description: 'A full-stack e-commerce solution with real-time inventory management and secure payment processing.',
+    tech: ['Php', 'HTML 5', 'MySQL', 'CSS3', 'Git','GitHub'],
+    liveUrl: 'https://zemenassets.lovestoblog.com',
+    images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
   }
 ];
 
