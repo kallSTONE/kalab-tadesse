@@ -114,10 +114,10 @@ export const projects: Project[] = [
   }, {
     id: 'project-4',
     category: 'development',
-    title: 'Analytics Dashboard',
-    description: 'Data visualization platform for Education management with interactive charts and reports.',
+    title: 'Hotel Website',
+    description: 'Hotel website with Excellent design and user experience.',
     tech: ['Typescript', 'Tailwind', 'Next.js', 'Supabase', 'Git','GitHub'],
-    liveUrl: 'https://legal-training.vercel.app/admin/dashboard',
+    liveUrl: 'https://tsedeke-grand-hotel.vercel.app/',
     images: ['/project-images/analytic-dashboard/Capture1.PNG', '/project-images/analytic-dashboard/Capture2.PNG', '/project-images/analytic-dashboard/Capture3.PNG', '/project-images/analytic-dashboard/Capture4.PNG', '/project-images/analytic-dashboard/Capture5.PNG', '/project-images/analytic-dashboard/Capture6.PNG', '/project-images/analytic-dashboard/Capture7.PNG']
   },{
     id: 'project-5',
