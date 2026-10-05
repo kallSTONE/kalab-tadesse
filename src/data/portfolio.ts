@@ -153,15 +153,7 @@ export const projects: Project[] = [
       '/project-images/graphics/Echo%20Boy%20Logo.avif',
       '/project-images/graphics/tenawo.avif'
     ]
-  }, {
-    id: 'project-7',
-    category: 'development',
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory management and secure payment processing.',
-    tech: ['Php', 'HTML 5', 'MySQL', 'CSS3', 'Git','GitHub'],
-    liveUrl: 'https://zemenassets.lovestoblog.com',
-    images: ['/project-images/zemen-assets/Capture1.PNG', '/project-images/zemen-assets/Capture2.PNG', '/project-images/zemen-assets/Capture3.PNG', '/project-images/zemen-assets/Capture4.PNG', '/project-images/zemen-assets/Capture5.PNG', '/project-images/zemen-assets/Capture6.PNG']
-  }
+  }, 
 ];
 
 
