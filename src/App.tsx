@@ -6,8 +6,21 @@ import Skills from './components/sections/Skills';
 import Projects from './components/sections/Projects';
 import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
+import DesignShowcase from './components/sections/DesignShowcase';
 
 function App() {
+  if (window.location.pathname === '/design') {
+    return (
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <DesignShowcase />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen">
       <Header />
