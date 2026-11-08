@@ -7,14 +7,29 @@ import Projects from './components/sections/Projects';
 import Experience from './components/sections/Experience';
 import Contact from './components/sections/Contact';
 import DesignShowcase from './components/sections/DesignShowcase';
+import NotFound from './components/sections/NotFound';
 
 function App() {
-  if (window.location.pathname === '/design') {
+  const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+
+  if (pathname === '/design') {
     return (
       <div className="min-h-screen">
         <Header />
         <main>
           <DesignShowcase />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (pathname !== '/') {
+    return (
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <NotFound />
         </main>
         <Footer />
       </div>
