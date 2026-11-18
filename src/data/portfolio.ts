@@ -131,7 +131,7 @@ export const projects: Project[] = [
     id: 'project-6',
     category: 'design',
     title: 'Graphic Design Showcase',
-    description: 'Brand, layout, and visual communication pieces curated as a scroll-first gallery.',
+    description: 'Brand, layout, and visual communication.',
     tech: ['Branding', 'Poster Design', 'Visual Layout', 'Graphics',],
     liveUrl: 'https://ics-process-management.vercel.app',
     images: [
