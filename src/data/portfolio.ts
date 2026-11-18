@@ -92,7 +92,7 @@ export const projects: Project[] = [
     title: 'Education Management App',
     description: 'Online Education Platform with Learning page, Student and Admin dashboard.',
     tech: ['TypeScript', 'Next.js', 'Supabase', 'Tailwind', 'Git','GitHub'],
-    liveUrl: 'https://earn-neway.vercel.app',
+    liveUrl: 'https://warka.site',
     images: ['/project-images/legal-training/Capture1.PNG', '/project-images/legal-training/Capture2.PNG', '/project-images/legal-training/Capture3.PNG', '/project-images/legal-training/Capture4.PNG', '/project-images/legal-training/Capture5.PNG', '/project-images/legal-training/Capture6.PNG', '/project-images/legal-training/Capture7.PNG']
   },
   {
